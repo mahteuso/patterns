@@ -1,0 +1,2 @@
+# patterns
+aprendendo sobre Patterns
