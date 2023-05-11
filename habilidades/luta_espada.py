@@ -1,10 +1,12 @@
 from interface import InterfaceGuerreiro
+
+
 class Lutador(InterfaceGuerreiro):
-    def __init__(self, nivel):
+    def __init__(self, nivel: int) -> None:
         self.nivel = nivel
 
     def comportamento(self):
-        print('Usando espadas para lutar')
+        print('Lutador usando Machado!')
 
-    def nivel_atributo(self):
-        print(f'Usando espada de nível: {self.nivel}')
+    def level(self):
+        print(f'Lutador usando Machado de nível: {self.nivel}')

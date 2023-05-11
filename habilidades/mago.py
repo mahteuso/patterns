@@ -1,11 +1,13 @@
 from interface import InterfaceGuerreiro
-class Curandeiro(InterfaceGuerreiro):
+
+
+class Mago(InterfaceGuerreiro):
     def __init__(self, nivel: int) -> None:
         self.nivel = nivel
 
+
     def comportamento(self):
-        print('Usando magia de cura')
+        print('Mago usando magia!')
 
-
-    def nivel_atributo(self):
-        print(f'Usando cura nível: {self.nivel}')
+    def level(self):
+        print(f'Mago usando cura nível: {self.nivel}')

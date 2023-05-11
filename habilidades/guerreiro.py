@@ -1,12 +1,12 @@
 from interface import InterfaceGuerreiro
 from typing import Type
+
 class Guerreiro:
-    def __init__(self, habilidade: Type[InterfaceGuerreiro]):
-        self.habilidade = habilidade
+    def __init__(self, personagem: Type[InterfaceGuerreiro]):
+        self.personagem = personagem
 
     def lutar(self):
-        self.habilidade.comportamento()
+        self.personagem.comportamento()
 
-
-    def nivel(self):
-        self.habilidade.nivel_atributo()
+    def nivel_guerreiro(self):
+        self.personagem.level()

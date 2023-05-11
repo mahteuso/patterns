@@ -1,11 +1,12 @@
 from interface import InterfaceGuerreiro
-class Arqueiro(InterfaceGuerreiro):
 
-    def __int__(self, nivel: int) -> None:
+
+class Arqueiro(InterfaceGuerreiro):
+    def __init__(self, nivel: int) -> None:
         self.nivel = nivel
 
     def comportamento(self):
-        print('Usando Arco e flechas para lutar')
+        print('Arqueiro lançando flechas!')
 
-    def nivel_atributo(self):
-        print(f'Usando Arco de nível: {self.nivel}')
+    def level(self):
+        print(f'Arqueiro usando Arco de nível: {self.nivel}')
